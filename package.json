@@ -2,7 +2,7 @@
   "name": "curoreactplatzy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<tu-usuario>.github.io/<tu-repositorio>", // Agrega esta línea
+  "homepage": "https://<tu-usuario>.github.io/<tu-repositorio>", 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build", // Agrega esta línea
-    "deploy": "gh-pages -d build" // Agrega esta línea
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build" 
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.7",
-    "gh-pages": "^5.0.0" // Asegúrate de agregar esto si no lo tienes instalado
+    "gh-pages": "^5.0.0" 
   }
 }
