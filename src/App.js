@@ -1,4 +1,5 @@
-
+import { TodoCounter } from './TodoCounter';
+import { TodoSearch } from './TodoSearch';
 import './App.css';
 
 function App() {
@@ -20,20 +21,8 @@ function App() {
 }
 
 
-function TodoCounter() {
-  return (
-    <h1>
-        Has completado 3 de 5 TODOS
-    </h1>
-  );
-}
-function TodoSearch() {
-  return (
-    <h1>
-        Has completado 3 de 5 TODOS
-    </h1>
-  );
-}
+
+
 function TodoList() {
   return (
     <h1>
