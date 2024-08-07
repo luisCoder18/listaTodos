@@ -1,9 +1,11 @@
-function TodoCounter() {
-    return (
-      <h1>
-          Has completado 3 de 5 TODOS
-      </h1>
-    );
-  }
+import React from 'react';
 
-  export {TodoCounter};
+function TodoCounter({ completed, total }) {
+  return (
+    <h2 className="text-xl font-semibold mb-4">
+      Has completado {completed} de {total} TODOs
+    </h2>
+  );
+}
+
+export { TodoCounter };

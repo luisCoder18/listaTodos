@@ -1,38 +1,97 @@
 .App {
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.create-todo-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.create-todo-button:hover {
+  background-color: #0056b3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: #ffffff; 
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item.bg-green-100 {
+  background-color: #d1e7dd; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item span {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.text-green-500 {
+  color: #28a745;
+}
+
+.text-red-500 {
+  color: #dc3545;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.input-field {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.background-container {
+  background-image: url('https://example.com/your-background-image.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  min-height: 100vh;
 }
